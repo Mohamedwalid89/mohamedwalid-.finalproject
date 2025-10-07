@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  color: white;
+  background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1920&q=80')
+    no-repeat center/cover;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #00eaff;
+}
+
+.logo i {
+  font-size: 1.8rem;
+  margin-right: 8px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-btn {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+.nav-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #00eaff, #00ffc8);
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+
+.nav-btn:hover::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.nav-btn:hover {
+  color: #000;
+  transform: translateY(-3px);
+}
+
+/* ===== HERO ===== */
+.hero {
+  text-align: center;
+  padding: 150px 20px 120px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #00eaff;
+  text-shadow: 0 0 15px #00eaff;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-top: 15px;
+  color: #dcdcdc;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.hero-btns {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 50px;
+}
+
+/* ===== BUTTONS ===== */
+.btn-main,
+.btn-sec {
+  display: inline-block;
+  padding: 14px 40px;
+  border-radius: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.4s ease;
+}
+
+.btn-main {
+  background: linear-gradient(90deg, #00eaff, #00ffc8);
+  color: #000;
+  box-shadow: 0 0 20px #00eaff80;
+}
+
+.btn-main:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 0 30px #00ffc880;
+}
+
+.btn-sec {
+  border: 2px solid #00eaff;
+  color: #00eaff;
+}
+
+.btn-sec:hover {
+  background: #00eaff;
+  color: #000;
+  transform: translateY(-5px) scale(1.05);
+}
+
+/* ===== SERVICES ===== */
+.services {
+  text-align: center;
+  padding: 100px 20px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #00eaff;
+}
+
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  transition: 0.5s ease;
+  box-shadow: 0 0 15px #00eaff20;
+  transform: translateY(0);
+}
+
+.service-card:hover {
+  transform: translateY(-15px) scale(1.03);
+  box-shadow: 0 0 25px #00eaff80;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card-title i {
+  font-size: 2rem;
+  color: #00eaff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.service-card:hover .card-title i {
+  transform: translateY(-8px);
+  color: #00ffc8;
+}
+
+/* ===== WHY CHOOSE US ===== */
+.why-choose {
+  padding: 100px 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.why-choose h2 {
+  font-size: 2.5rem;
+  color: #00eaff;
+  margin-bottom: 50px;
+}
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  width: 300px;
+  transition: 0.5s ease;
+  box-shadow: 0 0 15px #00eaff20;
+  transform: translateY(0);
+}
+
+.card:hover {
+  transform: translateY(-15px) scale(1.03);
+  box-shadow: 0 0 25px #00eaff80;
+}
+
+/* ===== CONTACT ===== */
+.contact {
+  text-align: center;
+  padding: 100px 20px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.contact-box {
+  margin-top: 40px;
+}
+
+.contact form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin-inline: auto;
+}
+
+.contact input,
+.contact button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.contact input {
+  background: #fff;
+  color: #000;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ===== Reveal Animation ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(60px) scale(0.95);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
