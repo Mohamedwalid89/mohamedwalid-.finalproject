@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyStartup</title>
+
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="finalproject.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="hero" id="home">
+    <nav class="navbar glass-nav">
+      <div class="container">
+        <div class="logo">
+          <i class="bx bx-rocket glass-icon"></i>
+          <span>MyStartup</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-btn active">Home</a></li>
+          <li><a href="#services" class="nav-btn">Services</a></li>
+          <li><a href="#why" class="nav-btn">Why Us</a></li>
+          <li><a href="#contact" class="nav-btn">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <h1 class="fade-up">Transforming <span>Ideas</span> Into Reality</h1>
+      <p class="fade-up delay">
+        We create futuristic digital solutions with elegant design, smooth performance, and innovation at heart.
+      </p>
+      <div class="hero-buttons fade-up delay-2">
+        <a href="#services" class="btn-main">Get Started</a>
+        <a href="#why" class="btn-outline">Learn More</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="reveal">
+    <h2>Our Services</h2>
+    <div class="services-container">
+      <div class="card">
+        <i class="bx bx-code-alt glass-icon"></i>
+        <h3>Web Development</h3>
+        <p>Responsive, secure, and high-performing web solutions for your business.</p>
+      </div>
+      <div class="card">
+        <i class="bx bx-paint glass-icon"></i>
+        <h3>UI / UX Design</h3>
+        <p>Modern, minimal, and intuitive user experiences for all devices.</p>
+      </div>
+      <div class="card">
+        <i class="bx bx-line-chart glass-icon"></i>
+        <h3>Marketing Strategy</h3>
+        <p>Data-driven marketing campaigns to help your brand grow smarter.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section id="why" class="reveal">
+    <h2>Why Choose Us</h2>
+    <div class="why-container">
+      <div class="card">
+        <i class="bx bx-bulb glass-icon"></i>
+        <h3>Innovative Thinking</h3>
+        <p>We craft bold and creative strategies tailored for your success.</p>
+      </div>
+      <div class="card">
+        <i class="bx bx-group glass-icon"></i>
+        <h3>Skilled Experts</h3>
+        <p>Our team consists of professionals passionate about technology.</p>
+      </div>
+      <div class="card">
+        <i class="bx bx-timer glass-icon"></i>
+        <h3>Fast Delivery</h3>
+        <p>We value your time — delivering excellence on schedule, every time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="reveal">
+    <h2>Contact Us</h2>
+    <div class="contact-box">
+      <button id="contactBtn" class="btn-main">Contact With Us</button>
+      <form id="contactForm" class="hidden">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <button type="submit" class="btn-main">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== POPUP ===== -->
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <h3>Thank you for contacting us!</h3>
+      <p>We’ll get back to you shortly.</p>
+    </div>
+  </div>
+
+  <script src="finalproject.js"></script>
+</body>
+</html>
